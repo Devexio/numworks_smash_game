@@ -1,0 +1,138 @@
+# Taille de l ecran : 222*320 (l*L) (kandinsky)
+from kandinsky import *
+from time import *
+from random import *
+from ion import *
+# Initialisation de la scene
+fill_rect(0,0,300,300,(255,255,255))
+in_menu=True
+while True:
+  draw_string("Smash",134,50,"orange")
+  draw_string("Numworks Edition",82,75,(203,207,0))
+  draw_string("Inspired by Smash on Roblox",0,200)
+  draw_string("Play:EXE",120,125)
+  if keydown(KEY_EXE):
+    print("ok")
+    in_menu=False
+    fill_rect(0,0,300,300,(255,255,255))
+    break
+  
+        
+  
+# Fonction fin
+def end():
+  draw_string("Restart:OK",109,133)
+  while True:
+    draw_string("Game over",111,70)
+    draw_string(str(score),152,98)
+    if keydown(KEY_OK):
+      fill_rect(0,0,222,320,(255,255,255))
+      break
+       
+  
+# Fonction blocs
+def block_fall(n,ran):
+  fill_rect(ran,n,25,25,(255,255,255))
+  n=n+1
+  fill_rect(ran,n,25,25,(0,0,0))
+  
+# Fonction personnage  
+def char(posx):
+
+  if posx < 0:
+    fill_rect(posx,200,25,25,(255,255,255))
+    posx=0
+    fill_rect(posx,200,25,25,"orange")
+  elif posx > 295:
+    fill_rect(posx,200,25,25,(255,255,255))
+    posx=295
+    fill_rect(posx,200,25,25,"orange")
+  else:       
+    if keydown(KEY_LEFT):
+      if posx <= 295:
+        fill_rect(posx,200,25,25,(255,255,255))
+        posx=posx-2
+        fill_rect(posx,200,25,25,"orange")
+      elif posx > 295:
+        fill_rect(posx,200,25,25,(255,255,255))
+        posx=295
+        fill_rect(posx,200,25,25,"orange")   
+    elif keydown(KEY_RIGHT):
+        if posx >= 0: 
+          fill_rect(posx,200,25,25,(255,255,255))
+          posx=posx+2
+          fill_rect(posx,200,25,25,"orange")
+        elif posx < 0:
+          fill_rect(posx,200,25,25,(255,255,255))
+          posx=0
+          fill_rect(posx,200,25,25,"orange")
+    
+  return posx
+         
+n=0
+posx=50
+ran=randint(0,300)
+ran2=randint(0,300)
+ran3=randint(0,300)
+ran4=randint(0,300)
+ran5=randint(0,300)
+ran6=randint(0,300)
+ran7=randint(0,300)
+listr={ran,ran2,ran3}
+score=0  
+# Game
+while True:
+  if in_menu==False:
+    fill_rect(posx,200,25,25,"orange")
+    posx=char(posx)
+    if n==200:
+      for i in listr:
+        if posx >= i-25 and posx <= i+25:
+          fill_rect(0,0,320,222,(255,255,255))
+          end()
+          fill_rect(0,0,222,320,(255,255,255))
+          fill_rect(0,0,350,350,(255,255,255))
+          score=0
+          ran=randint(0,300)
+          ran2=randint(0,300)
+          ran3=randint(0,300)
+          ran4=randint(0,300)
+          ran5=randint(0,300)
+          ran6=randint(0,300)
+          ran7=randint(0,300)
+
+        
+           
+      fill_rect(0,0,350,350,(255,255,255))
+      ran=randint(0,300)
+      ran2=randint(0,300)
+      ran3=randint(0,300)
+      ran4=randint(0,300)
+      ran5=randint(0,300)
+      ran6=randint(0,300)
+      ran7=randint(0,300)
+      n=0
+      score+=1
+      draw_string(str(score),0,0)
+              
+    else:
+      block_fall(n,ran)
+      block_fall(n,ran2)
+      block_fall(n,ran3)
+      listr={ran,ran2,ran3}
+      if score >= 10:
+          block_fall(n,ran4)     
+          listr={ran,ran2,ran3,ran4}
+      if score >= 25:
+          block_fall(n,ran5)
+          listr={ran,ran2,ran3,ran4,ran5}
+      if score >= 50:
+        block_fall(n,ran6)
+        listr={ran,ran2,ran3,ran4,ran5,ran6}
+      if score >= 100:
+        block_fall(n,ran7)
+        listr={ran,ran2,ran3,ran4,ran5,ran6,ran7}
+        
+      n=n+1
+      draw_string(str(score),0,0)
+      sleep(0.001)
