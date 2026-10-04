@@ -20,6 +20,7 @@ Timecode : 22:20
 This code is under the Creative Commons BY-NC 4.0.
 This means you are allowed to :
 - Freely copy, modify, or communicate this code
+
 But you must respect these limitations:
 - Give appropriate credit (my username : Devexio), provide a link to the original repository (link to this repository : https://github.com/Devexio/numworks_smash_game), and indicate if changes were made
 - You are not allow to use this software, its code, or any derivative works for commercial purposes
