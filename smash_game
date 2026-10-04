@@ -9,7 +9,6 @@ in_menu=True
 while True:
   draw_string("Smash",134,50,"orange")
   draw_string("Numworks Edition",82,75,(203,207,0))
-  draw_string("Inspired by Smash on Roblox",0,200)
   draw_string("Play:EXE",120,125)
   if keydown(KEY_EXE):
     print("ok")
