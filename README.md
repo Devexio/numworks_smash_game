@@ -17,12 +17,17 @@ Smash Numworks ist a little arcade game. The goal is to get the highest score po
 Timecode : 22:20
 
 # License
-This code is under the Creative Commons BY-NC 4.0.
-This means you are allowed to :
-- Freely copy, modify, or communicate this code
+This project is licensed under the terms of the **GNU General Public License v3.0** (GPL-3.0).
 
-But you must respect these limitations:
-- Give appropriate credit (my username : Devexio), provide a link to the original repository (link to this repository : https://github.com/Devexio/numworks_smash_game), and indicate if changes were made
-- You are not allow to use this software, its code, or any derivative works for commercial purposes
+This means you are allowed to:
+- Freely use, modify and distribute it for personal and commercial purposes
 
-**For more informations, please check the license file or the official page of Creative Commons about this license : https://creativecommons.org/licenses/by-nc/4.0/deed.fr
+But:
+- I'm not responsible if this programme causes any problem of any kind (loss of data...)
+- If you modify or distribute this software, you must follow the following conditions:
+  - You cannot remove the original creator's name or license, and must keep them in all copies
+  - If you modify the project, you must clearly document and state the changes
+  - You must make the complete source code available when distributing the software or any modified version
+  - If you modify this code or incorporate it into a bigger project, you must release it under the same GPL-3.0 license
+
+For more information and the full legal text, I invite you to check the LICENSE file, located on the "main" branch
