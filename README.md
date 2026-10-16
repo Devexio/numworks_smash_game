@@ -12,12 +12,12 @@ Smash Numworks ist a little arcade game. The goal is to get the highest score po
 6. Click on "Save"
 7. Click on "Load to calculator"
 
-# Contact
-If you want to report a bug, suggest an idea or anything else, contact me directly on Github on the "Pull Requests" tab or the "Discussions" tab
-
-**If you struggle, here's a link to an official tutorial from the Numworks channel on Youtube**
+8. **If you struggle, here's a link to an official tutorial from the Numworks channel on Youtube**
 -> https://youtu.be/bFujy7jVIIY?t=1340&si=dJAV63-UWsqUBjGd
 Timecode : 22:20
+
+# Contact
+If you want to report a bug, suggest an idea or anything else, contact me directly on Github on the "Pull Requests" tab or the "Discussions" tab
 
 # License
 This project is licensed under the terms of the **GNU General Public License v3.0** (GPL-3.0).
