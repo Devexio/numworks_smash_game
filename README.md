@@ -9,7 +9,7 @@ Smash Numworks ist a little arcade game. The goal is to get the highest score po
 ⚠️ Make sure to have a Numworks account. If you don't have on, click on "Sign up" and follow the instructions ⚠️
 4. Click on "New script" and paste the code into the dedicated zone
 5. Name it with whatever name you want (I recommand "smash")
-6 Click on "Save"
+6. Click on "Save"
 7. Click on "Load to calculator"
 
 # Contact
