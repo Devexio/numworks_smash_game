@@ -12,7 +12,7 @@ Smash Numworks ist a little arcade game. The goal is to get the highest score po
 6. Click on "Save"
 7. Click on "Load to calculator"
 
-8. **If you struggle, here's a link to an official tutorial from the Numworks channel on Youtube**
+**If you struggle, here's a link to an official tutorial from the Numworks channel on Youtube**
 -> https://youtu.be/bFujy7jVIIY?t=1340&si=dJAV63-UWsqUBjGd
 Timecode : 22:20
 
