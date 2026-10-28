@@ -1,5 +1,5 @@
 # numworks_smash_game
-Smash Numworks ist a little arcade game. The goal is to get the highest score possible by dodging the falling blocks !
+Smash Numworks is a little arcade game. The goal is to get the highest score possible by dodging the falling blocks !
 
 # Instructions to download the programm on your Numworks
 
